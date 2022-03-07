@@ -10,10 +10,10 @@ client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
     message.markSeen();
 
-    if(message.content.toLowerCase().includes('Who Is Moezilla')) return message.chat.sendMessage('My Master MoeZilla');
-    if(message.content.toLowerCase().includes('!repo')) return message.chat.sendMessage('https://github.com/MoeZilla/Insta-Chat-Bot');
-    if(message.content.toLowerCase().includes('!Repo')) return message.chat.sendMessage('https://github.com/MoeZilla/Insta-Chat-Bot');
-    if(message.content.toLowerCase().includes('!ping')) return message.chat.sendMessage('pomg');
+    if(message.content.toLowerCase().includes('Who is chankit')) return message.chat.sendMessage("He's is my master.");
+    if(message.content.toLowerCase().includes('!repo')) return message.chat.sendMessage('https://github.com/ChankitSaini/InstaChat');
+    if(message.content.toLowerCase().includes('!Repo')) return message.chat.sendMessage('https://github.com/ChankitSaini/InstaChat');
+    if(message.content.toLowerCase().includes('!ping')) return message.chat.sendMessage('Ah! You woke me up!');
 
     chatbot(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${process.env.BotName}&ownername=${process.env.OwnerName}`)
     .then(res => res.json())

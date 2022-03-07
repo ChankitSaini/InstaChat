@@ -1,10 +1,10 @@
 {
-    "name": "Instagram ChatBot",
-    "description": "Most powerful Instagram chatbot",
-    "repository": "https://github.com/MoeZilla/Insta-Chat-Bot",
+    "name": "InstaChat",
+    "description": "An AI based Instagram Chatbot project",
+    "repository": "https://github.com/ChankitSaini/InstaChat",
     "env": {
         "username": {
-            "description": "Instagram Username Here without @",
+            "description": "Instagram Username of chatbot account (without @)",
             "required": true
         },
         "password": {
